@@ -37,8 +37,6 @@ A stack is an ordered collection of items where the addition of new items and th
 
 
 
-
-
 ## Author
 
 - [@eqaderi444](https://github.com/eqaderi444/)
