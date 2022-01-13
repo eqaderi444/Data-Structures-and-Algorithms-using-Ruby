@@ -1,9 +1,9 @@
 =begin
-Ruby array can be used as a queue. if we use array unshift and pop methods it will behave like a queue  
+Ruby array can be used as a queue. if we use array unshift and dequeue  methods it will behave like a queue  
 
 Queue implementation using ruby that includes the following methods 
-1. preInsert: to add element into the front of the queue 
-2. pop: to remove the existing element from the top of the queue
+1. enqueue : to add element into the front of the queue 
+2. dequeue : to remove the existing element from the top of the queue
 3. getSize: to return the length of the queue
 4. print: to show up the actual queue data
 =end
@@ -14,12 +14,12 @@ class Queue
         @list = []
     end
   
-    def preInsert(item)
+    def enqueue (item)
         @list.unshift(item)
     end
   
-    def pop
-        @list.pop
+    def dequeue 
+        @list.dequeue 
     end
   
     def getSize
@@ -33,10 +33,10 @@ class Queue
 
 queue = Queue.new
 
-queue.preInsert(10)
-queue.preInsert(20)
-queue.preInsert(30)
+queue.enqueue (10)
+queue.enqueue (20)
+queue.enqueue (30)
 
-queue.pop
+queue.dequeue 
 
 puts queue.list
